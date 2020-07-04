@@ -15,9 +15,9 @@ set_gelu('tanh')  # 切换gelu版本
 num_classes = 2
 maxlen = 128
 batch_size = 32
-config_path = '/root/kg/bert/albert_small_zh_google/albert_config.json'
-checkpoint_path = '/root/kg/bert/albert_small_zh_google/albert_model.ckpt'
-dict_path = '/root/kg/bert/albert_small_zh_google/vocab.txt'
+config_path = 'datasets/albert_small_zh_google/albert_config.json'
+checkpoint_path = 'datasets/albert_small_zh_google/albert_model.ckpt'
+dict_path = 'datasets/albert_small_zh_google/vocab.txt'
 
 
 def load_data(filename):
@@ -137,4 +137,5 @@ if __name__ == '__main__':
 else:
 
     model.load_weights('best_model.weights')
+    pass
 
